@@ -1,5 +1,5 @@
 {% set name = "json2parquet" %}
-{% set version = "1.0.0" %}
+{% set version = "2.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 488c922e7e4b2f46f811408638f94e2994af7193326a9c9d9088e5dde4bf76c0
+  sha256: 080dcbacc10c8655528f0318d24f2d9fc7bb59b3c5126caaea80938e4f6bbf49
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - ciso8601
     - numpy >=1.14.0
     - pandas <2.0.0
-    - pyarrow <2.0.0
+    - pyarrow <6.0.0
     - python >=3.6
 
 test:
@@ -37,7 +37,8 @@ test:
 about:
   home: https://github.com/andrewgross/json2parquet
   summary: A simple Parquet converter for JSON/python data
-  description: "This library wraps pyarrow to provide some tools to easily convert JSON data into Parquet format. It is mostly in Python. It iterates over files. It copies the data several times in memory. It is not meant to be the fastest thing available. However, it is convenient for smaller data sets, or people who don't have a huge issue with speed."
+  description: This library wraps pyarrow to provide some tools to easily convert JSON data into Parquet format. It is mostly in Python. It iterates over files. It copies the data several times in memory. It is not meant to be the fastest thing available. However, it is convenient for smaller data sets, or people who don't
+    have a huge issue with speed.
   license: MIT
   license_family: MIT
   license_file: LICENSE
