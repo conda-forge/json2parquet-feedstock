@@ -23,7 +23,7 @@ requirements:
     - ciso8601
     - numpy >=1.14.0
     - pandas <2.0.0
-    - pyarrow <2.0.0
+    - pyarrow <6.0.0
     - python >=3.6
 
 test:
