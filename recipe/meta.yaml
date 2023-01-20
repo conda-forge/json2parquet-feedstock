@@ -1,5 +1,5 @@
 {% set name = "json2parquet" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 080dcbacc10c8655528f0318d24f2d9fc7bb59b3c5126caaea80938e4f6bbf49
+  sha256: b1ce3712f10f547597252605872f819b0fa6b491751e97e385efb466a8a46ffb
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - ciso8601
     - numpy >=1.14.0
     - pandas <2.0.0
-    - pyarrow <6.0.0
+    - pyarrow <11.0.0
     - python >=3.6
 
 test:
